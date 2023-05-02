@@ -39,6 +39,10 @@ body{
 .container .squres .row div{
     width: 150px;
     height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
     background: #fff;
     margin: 5px;
     cursor: pointer;
