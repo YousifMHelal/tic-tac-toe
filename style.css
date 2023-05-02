@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: #404258;
+}
+
+
+
+.container h2{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.container .squres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .squres .row{
+    display: flex;
+}
+
+.container .squres .row div{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 90px;
+    text-align: center;
+    font-weight: 700;
+    color: #50577a;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.player-1,
+.player-2{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.player-1 h1,
+.player-2 h1{
+    color: #50577a;
+    font-size: 1.8rem;
+}
+
+.player-1 p,
+.player-2 p{
+    font-size: 3rem;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.disable{
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+    .container .squres .row div,
+    .player-1,
+    .player-2{
+        width: 100px;
+        height: 100px;
+    }   
+
+    .player-1 h1,
+    .player-2 h1{
+        font-size: 1.2rem;
+    }
+    .player-1 p,
+    .player-2 p{
+        font-size: 2.5rem;
+        margin-top: 2px;
+    }
+
+    .score{
+        display: flex;
+        gap: 1rem;
+    }
+}
